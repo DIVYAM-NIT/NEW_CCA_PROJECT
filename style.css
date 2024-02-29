@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width:450px){
+    .search input{
+        width: 60%;
+    }
+    .details{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
 body{
     background: #222;
 }
@@ -56,11 +66,13 @@ body{
 .weather h1{
     font-size: 80px;
     font-weight: 500;
+    flex: 1;
 }
 .weather h2{
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
+    flex: 1;
 }
 .details{
     display: flex;
